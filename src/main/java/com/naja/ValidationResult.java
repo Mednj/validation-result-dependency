@@ -32,4 +32,14 @@ public class ValidationResult {
     public List<String> getErrors() {
         return errors;
     }
+
+    @Override
+    public String toString() {
+        return "ValidationResult{" +
+                "errors=" + errors +
+                ", errorReasonCode='" + errorReasonCode + '\'' +
+                ", errorReasonDescription='" + errorReasonDescription + '\'' +
+                ", validMessage='" + validMessage + '\'' +
+                '}';
+    }
 }
